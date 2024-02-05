@@ -1,0 +1,26 @@
+
+body {
+
+}
+
+img{
+	float: right;
+}
+
+h1 {
+	border-width: 2px 2px;
+	padding: 0.25em;
+	text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+div.intro {
+	/*background-color: blue; */
+	display:inline-block;
+	width: 100%;
+}
