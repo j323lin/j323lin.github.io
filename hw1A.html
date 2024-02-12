@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+  <meta charset="utf-8" > 
+  <meta content="text/html">
+  <meta description = "A page demonstrating basic html css skills">
+
+  <title>CIS 128 Mobile Web App Development</title> 
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		
+		$("button").click(function(){
+			$("h1").css("color","green")
+			$("h1").animate({fontSize:'+=2rem'}, 3000);
+			$("img").animate({borderWidth: '5px'}, 5000); //{ duration: 5000, queue: false });
+			$("h1").animate({fontSize:"-=2rem"}, 3000);
+			var timer = setTimeout(function(){$("h1").css("color", "black")},5000); 
+		});
+
+	});
+	</script> 
+</head>
+
+
+<body>
+<h1>CIS 128 Mobile Web App Development</h1>
+	
+	<div class="intro">
+		
+		<img src="self_portrait.jpg" alt="Jessy Lin headshot with a grey sweatshirt"> 
+		<p> 
+			My name is Jessy Lin and I am a student at SMC. This is my first year and first course. I started software development using python and Django, mainly backend programming. This quarter, I decided to learn about the front end. 
+		</p>
+	</div>
+
+
+	<div class ="reason" >
+		<p> 
+			I joined this class to understand what the modern tech stacks frontend development is. after devling into it a bit more and thought mobile might be a good place to start.
+		</p>
+	</div>
+
+
+	<h2 class="technology">Technologies for this class </h2>
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+
+	<h2 class="resource">Resources </h2>
+	<ul>
+		<li>
+			<a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer" >w3schools </a>
+			- w3schools provides a good resources to look up HTML or CSS syntax. My goto for basic stuff.
+		</li>
+
+		<li>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/Guide" target="_blank" rel="noopener noreferrer">Mozilla Developer </a> - Another good website to understand about web programming concepts and tools although the technologies might not be the most up to date.
+		</li>
+	</ul>
+
+	<button>Start Animatiion</button>
+
+</body>
+</html>
