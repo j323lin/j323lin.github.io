@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Topic 2</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<header>
+    <div id="navbar-spot"></div>
+    <script> 
+      $(function(){
+        $("#navbar-spot").load("navbar.html"); 
+      });
+    </script> 
+  </header>
+
+<body>
+    <div class="container mt-3">
+        <p class="display-4">AMAZING TOYS</p>
+        <div id="toy_accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse1">
+                        Toy 1
+                    </a>
+                </div>
+                <div id="collapse1" class="collapse" data-bs-parent="#toy_accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="1.png" class="img-fluid" alt="toy 1 image">This is image</img>
+                            </div>
+                            <div class="col-md-6">
+                                <p>This is description</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapse2">
+                        Toy 2
+                    </a>
+                </div>
+                <div id="collapse2" class="collapse" data-bs-parent="#toy_accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>This is image</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>This is description</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+<!-- check head pdts page not updated -->

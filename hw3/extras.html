@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ABC Toys</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<header>
+    <!-- ref: https://stackoverflow.com/a/42333464 -->
+    <div id="navbar-spot"></div>
+    <script> 
+      $(function(){
+        $("#navbar-spot").load("navbar.html"); 
+      });
+    </script> 
+</header>
+
+<body>
+<!-- <div class="container">
+    <h2>wurf database resources</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Jess</td>
+                <td>Lin</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<div class="container mt-3">
+    <h2 class="m-2">WURFL Capabilities</h2>
+    <ul class="list-group">
+        <li class="list-group-item" aria-current="true" data-bs-toggle="collapse" href="#collapse1">
+            av1_hardware_decode_level -- chips
+        </li>
+        <p id="collapse1" class="collapse m-3">The maximum AV1 hardware decode level supported by the device. 
+            Each seq_level_idx property of a decoder is mapped to a level as defined in the
+            reference table below. This mapping is also available in the AOM AV1
+            specification. 
+        </p>
+        <li class="list-group-item" aria-current="true" data-bs-toggle="collapse" href="#collapse2">
+            is_wireless_device -- product_info
+        </li>
+        <p id="collapse2" class="collapse m-3">True if a device is wireless (WiFi, 3G, LTE etc.). 
+            Specifically a mobile phone or a tablet are considered as wireless devices, 
+            but a desktop PC or a laptop are not.          
+        </p>
+        <li class="list-group-item" aria-current="true" data-bs-toggle="collapse" href="#collapse3">
+            resolution_height -- display
+        </li>
+        <p id="collapse3" class="collapse m-3">Screen height expressed in physical pixels.
+        </p>
+      </ul>
+</div>
+</body>
+</html> 
+
+
+<!-- check head  -->
