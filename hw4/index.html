@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>CIS 128 Mobile Web App Development -- PWA </title> 
+	<meta name="description" content="A page demonstrating pwa skills"> 
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  </head>
+
+  <body>
+    <!-- DOES THIS NEED TO BE HEADER -->
+    <div id="content">
+        <h1>
+            A PWA that lets user change background 
+        </h1>
+        <ul>
+            Here are the main characteristics of a pwa: 
+            <li>Can install</li>
+            <li>Can use offline</li>
+        </ul>
+        <label for="background">Choose a background image:</label>
+        <select name="background" id="background">
+            <option value="white">Non</option>
+            <option value="lightgold">Light Gold</option>
+            <option value="lightblue">Light Blue</option>
+    </div>
+  </body>
+  
+  <script>
+    document.getElementById('background').addEventListener('change', function() {
+        var bg = this.value;
+        if (bg == "white"){
+            document.getElementById("content").style.backgroundColor = this.value;
+        }
+        else if (bg == "lightgold"){
+            document.getElementById("content").style.backgroundImage = 'url("images/lightgold.jpg")';
+        }
+        else if (bg == "lightblue"){
+            document.getElementById("content").style.backgroundImage = 'url("images/lightblue.jpg")';
+        }        
+
+    })
+  </script>
+  </html>
