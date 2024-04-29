@@ -4,12 +4,14 @@
 	<meta charset="utf-8"> 
 	<title>CIS 128 Mobile Web App Development -- PWA </title> 
 	<meta name="description" content="A page demonstrating pwa skills"> 
-  <link rel="stylesheet" type="text/css" href="style.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />  
+    <link rel="stylesheet" type="text/css" href="style.css"> 
   </head>
 
-  <body>
+  <body id="content">
     <!-- DOES THIS NEED TO BE HEADER -->
-    <div id="content">
+    <div>
         <h1>
             A PWA that lets user change background 
         </h1>
@@ -26,6 +28,10 @@
     </div>
   </body>
   
+  <script>
+    // Register the Service Worker
+    navigator.serviceWorker.register("service-worker.js");
+  </script> 
   <script>
     document.getElementById('background').addEventListener('change', function() {
         var bg = this.value;

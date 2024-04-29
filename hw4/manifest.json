@@ -1,0 +1,22 @@
+{
+    "name": "Jess PWA",
+    "short_name":"PWA",
+	"background_color":"#5900b3",
+	"theme_color":"#5900b3",
+	"description":"This is a PWA tutorial.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/manifest-icon-512.maskable.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "images/manifest-icon-192.maskable.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+
+}
