@@ -5,6 +5,7 @@
 	<title>CIS 128 Mobile Web App Development -- PWA </title> 
 	<meta name="description" content="A page demonstrating pwa skills"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json" />  
     <link rel="stylesheet" type="text/css" href="style.css"> 
   </head>
 
@@ -15,11 +16,23 @@
         </h1>
     </header>
     <div id="content">
-        <ul>
-            Here are the main characteristics of a pwa: 
-            <li>Can install</li>
-            <li>Can use offline</li>
-        </ul>
+        <p>A Progressive Web App (PWA) is a type of web application that provide users with a native app-like experience 
+            directly within a web browser. They are designed to work on any device or platform that uses a browser.</p>
+        <dl>
+            Here are the 2 key features of a pwa: 
+            <dt>1. Service Workers</dt>
+                <dd>
+                    Service workers are JavaScript files that run in the background independently of the web page,
+                    intercepting network requests, caching resources, managing push notifications and handles background synchronization. 
+                    By caching resources locally, users can use the application even offline.
+                </dd>
+            <dt>2. Manifest File</dt>
+                <dd>
+                    PWAs are installable, onto the device's home screen for access, like how apps do. 
+                    The manifest file is a JSON file that provides the start url, name, icons, colors, and display mode. 
+                    By including a manifest file, we can control how the PWAappears when launched from the home screen.
+                </dd>
+        </dl>
         <label for="background">Choose a background image:</label>
         <select name="background" id="background">
             <option value="white">None</option>
@@ -28,6 +41,18 @@
     </div>
   </body>
   
+  <script>
+    // Register the Service Worker 
+    if (navigator.serviceWorker) {
+    window.addEventListener('load', () => {
+	   navigator.serviceWorker.register("service-workerv2.js")
+	      .then(registration => console.log('Service worker registered'))
+		  .catch(err => console.log(`Service worker not registered - Error: ${err}`))
+    })
+} else {
+    console.log('Service Worker is not supported in this browser.')
+}
+  </script> 
   <script>
     document.getElementById('background').addEventListener('change', function() {
         var bg = this.value;
@@ -43,4 +68,4 @@
 
     })
   </script>
-  </html>
+</html>
