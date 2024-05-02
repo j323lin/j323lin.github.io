@@ -1,6 +1,6 @@
 var CACHE_VERSION = 'v2';
 var CACHE_FILES = [
-    'indexv2.html',
+    'index.html',
     'style.css',
     'manifest.json',
     "images/icon192v2.png",
