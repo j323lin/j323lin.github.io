@@ -3,7 +3,7 @@
     "short_name":"PWA",
 	"background_color":"#5900b3",
 	"theme_color":"#5900b3",
-	"description":"This is a basic PWA",
+	"description":"This is a PWA tutorial.",
     "start_url": "indexv2.html",
     "display": "standalone",
     "icons": [
