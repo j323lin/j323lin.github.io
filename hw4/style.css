@@ -1,4 +1,19 @@
-#content {
+body{
+  background:white;
+  font-family:Arial, Helvetica, sans-serif; 
+}
+
+#theme {
     background-image: none;
-    background-size: cover;
+    background-size: 100vh 100vw;
+}
+
+  #content div{
+    padding: 2px;
+}
+
+@media screen and (max-width: 600px){ 
+  #content div{
+      box-sizing: border-box;
+  }
 }
