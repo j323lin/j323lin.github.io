@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="A page comparing Flutter, React Native, PhoneGap"> 
+  <title>CIS 128 Mobile Web App Development -- Technologies of Hybrid Apps </title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+<header>
+    <div>
+        <h1>Hybrid Technologies in 2024 --</h1>
+        <h1>Comparsion between Flutter, Native and PhoneGap.</h1>
+    </div>
+</header>
+<div class="table-wrapper">
+  <h2>Summary: </h2>  
+  <table>
+    <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Performance</th>
+          <th>Platform Support</th>
+          <th>Devlopment Time</th>
+          <th>UI Components</th>
+          <th>License & Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-th="Technology"><a href="#flutter_intro">Flutter</a></td>
+          <td data-th="Performance"><a href="#flutter_perform">High</a></td>
+          <td data-th="Platform Support"><a href="#flutter_platform">High</a></td>
+          <td data-th="Learning Curve"><a href="#flutter_learning">Medium</a></td>
+          <td data-th="UI Components"><a href="#flutter_ui">Customizable</a></td>
+          <td data-th="License & Cost">Open Source, Free</td>
+        </tr>
+        <tr>
+          <td data-th="Technology"><a href="#react_intro">React Native</a></td>
+          <td data-th="Performance"><a href="#react_perform">Not the highest</a></td>
+          <td data-th="Platform Support"><a href="#react_platform">Medium</td>
+          <td data-th="Learning Curve"><a href="#react_learning">Quick</a></td>
+          <td data-th="UI Components"><a href="#react_ui">Wide</a></td>
+          <td data-th="License & Cost">Open Source, Free</td>
+        </tr>
+        <tr>
+            <td data-th="Technology"><a href="#phonegap_intro">PhoneGap</a> </td>
+            <td data-th="Performance"><a href="#phonegap_perform">May be slowest</a></td>
+            <td data-th="Platform Support"><a href="#phonegap_platform">Not the highest</a></td>
+            <td data-th="Learning Curve"><a href="#phonegap_learning">Not the highest</a></td>
+            <td data-th="UI Components"><a href="#phonegap_ui">Not the highest</a></td>
+            <td data-th="License & Cost">Open Source, Free</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
+
+<div class=details>
+    <h3>Flutter</h3>
+    <p id="flutter_intro">
+        Flutter is an open-source UI SDK created by Google for building natively compiled applications 
+        for mobile(foldable devices too), web, desktop and embedded devices from a single codebase. 
+        It allows developers to write applications using the Dart programming language.
+    </p>
+    <p id="flutter_perform"> 
+        <span style="font-weight: bold;">Peformance:</span>
+        Flutter has its own rendering engine Skia, which compiles the UI to native code. This compiling 
+        ahead-of-time (AOT) results in excellent performance and rendering speed.
+        It also allows for high-performance applications with smooth animations and transitions.
+        Afterwards, Flutter transitioned to Impeller, which is designed to optimize GPU usage which leverages modern
+        hardware for better user experiences.
+    </p>
+    <p id="flutter_platform">
+        <span style="font-weight: bold;">Platform Support:</span>
+        Flutter: Supports iOS, Android, web, and desktop,allowing developers to target multiple 
+        platforms and audiences from a single codebase.
+    </p>
+    <p id="flutter_learning">
+        <span style="font-weight: bold;">Learning Curve:</span>
+        Requires familiarity with Dart programming language, which might have a steeper learning
+        curve for developers new to it. But it is easier to learn than Javascript.
+    </p>
+    <p id="flutter_ui">
+        <span style="font-weight: bold;">UI Components:</span>
+        Provides a rich set of customizable UI widgets following Material Design guidelines or Cupertino
+        for Android and iOS. It also introduces the concept of themes 
+        to share styles across pages and enables consistent UI across platforms. This is particularly developer friendly too.
+    </p>
+
+    <h3>React Native</h3>
+    <p id="react_intro">
+      React Native is a mobile framework based more was developed by Facebook. It utilizes APIs and native UI components to build mobile applications.
+      React Native uses JavaScript as a bridge to create applications that run on both iOS and Android devices.
+    </p>
+    <p>
+      Note that React Native is different from 
+      the <a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">React project</a> 
+      and ReactJS which is a JavaScript library.
+    </p>
+    <p id="react_perform">
+      <span style="font-weight: bold;">Performance:</span>
+        React Native relies on a bridge to communicate between JavaScript and native components,
+        which can introduce some performance overhead, especially for complex animations.
+        However, optimizations like Hermes can improve performance.
+    </p>
+    <p id="react_platform">
+      <span style="font-weight: bold;">Platform Support:</span>
+        React Native supports development for iOS, Andriod, web applications as well as applications for TV and watch devices.
+    </p>
+    <p id="react_learning">
+      The learning curve can be quick if the developer is already familiar with JavaScript which is usually used in web development.
+      So they might only have to learn React framework.
+    <p id="react_ui">
+      <span style="font-weight: bold;">UI Components:</span>
+      React Native is a mobile framework based more on native components for both Android and iOS devices. It offers a wide range of UI components and 
+      third-party libraries that helps in creating beautiful user interfaces to build native-like user experiences in iOS and Andriod Devcies. 
+    </p>
+    <h3>PhoneGap</h3>
+    <p id="phonegap_intro">
+      PhoneGap, now known as Apache Cordova, is an open-source framework for building cross-platform mobile 
+      applications using web technologies such as HTML, CSS, and JavaScript. Developed by Adobe Systems, PhoneGap allows
+      developers to create mobile apps that can run on iOS, Android, and Windows Phone, using a single codebase.
+    </p>
+    <p id="phonegap_perform">
+      <span style="font-weight: bold;">Performance:</span>
+      Relies on a bridge that converts develoers' HTML, CSS, JavaScript code into native code via a consistent, cross-platform JavaScript API. 
+      However this can result in slower performance compared to Flutter and React Native for complex applications.</p>
+    <p id="phonegap_platform">
+      <span style="font-weight: bold;">Platform Support:</span>
+      PhoneGap can be used to develop for iOS, Andriod, web applications.
+    </p>
+    <p id="phonegap_learning">
+      <span style="font-weight: bold;">Learning Curve:</span>
+      Easy to learn the development environment if the developer is already fimilar with the 
+      web technologies.
+    </p>
+    <p id="phonegap_ui">
+      <span style="font-weight: bold;">UI Components:</span>
+      Relies on web technologies for UI rendering, providing access to standard HTML elements 
+      and CSS styles for building user interfaces. It does not provide native UI components, 
+      however, there are third-party frameworks (eg. Ionic) which provices pre-designed UI components and layouts 
+      specifically tailored for mobile applications built with web technologies. This may require more efforts of 
+      developer and development time.
+    </p>
+</div>
+
+<footer>
+    <p> 
+    <ul>
+        <h2>References:</h2>
+        <li><a href="https://www.nomtek.com/blog/flutter-vs-react-native" target="_blank" rel="noopener noreferrer">Comparision between React Native and Flutter</a></li>
+        <li>
+          <a href="https://www.simplilearn.com/tutorials/reactjs-tutorial/flutter-vs-react-native" target="_blank" rel="noopener noreferrer">
+            Another Comparision between React Native and Flutter
+          </a>
+        </li>
+        <li><a href="https://stackoverflow.com/a/34641772" target="_blank" rel="noopener noreferrer">Different between React Native and ReactJS</a></li>
+        <li><a href="https://reactnative.dev/" target="_blank" rel="noopener noreferrer">React Native website</a></li>
+        <li><a href="https://docs.flutter.dev/" target="_blank" rel="noopener noreferrer">Flutter website</a></li>
+    <li>
+      <a href="https://cordova.apache.org/" target="_blank" rel="noopener noreferrer">PhoneGap (now Cordova Apache) website</a>
+    </li>
+      </ul>
+    </p>
+</footer>
+</body>
+
+<script>
+  // Register the Service Worker
+  navigator.serviceWorker.register("service-worker.js");
+</script> 
+
+</html>
